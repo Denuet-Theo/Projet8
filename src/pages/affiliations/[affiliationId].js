@@ -1,8 +1,7 @@
-import React, { useState, useEffect, useRef } from 'react'
-import { collection,doc, getDocs, getDoc, where, query, deleteDoc } from 'firebase/firestore'
+import React from 'react'
+import { doc, getDoc} from 'firebase/firestore'
 import { db } from '../../../firebase'
 import Head from "next/head"
-//import GeneratePDF from '../../components/Pdf/GeneratePdf';
 import Image from 'next/image';
 import Layout from '../../components/Layout';
 import dynamic from 'next/dynamic'
@@ -52,7 +51,12 @@ export default function Affiliation({ entries}) {
     )
   }
   
-  export async function getServerSideProps({ params }) {
+  export async function getServerSideProps({ params,res }) {
+    res.setHeader(
+      'Cache-Control',
+      'public, s-maxage=10, stale-while-revalidate=59'
+    )
+    
    const affiliationId=params.affiliationId
    const databaseRef = doc(db,"Travaux",affiliationId)
    const data = await getDoc(databaseRef)
