@@ -5,7 +5,7 @@ import { db } from '../../firebase'
 import Layout from "../components/Layout"
 import dynamic from 'next/dynamic'
 
-const GenerateCvPdf = dynamic(() => import('../components/Pdf/GenerateCvPdf'))
+//const GenerateCvPdf = dynamic(() => import('../components/Pdf/GenerateCvPdf'))
 const Collapse = dynamic(() => import('../components/Collapse'))
 
 export default function About({entries}){
@@ -29,7 +29,7 @@ export default function About({entries}){
                     </div>
                     <Collapse need={entries}/>
                     <div className="m-auto">
-                        <GenerateCvPdf/>
+                        
                     </div>
                 </section>
             </Layout>
