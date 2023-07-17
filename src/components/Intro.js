@@ -29,6 +29,10 @@ function Intro({datas}) {
            <span className='text-3xl'>{datas[1].Intro[7].name}</span> <br></br>
            {datas[1].Intro[7].text}
            </div>
+           <div className='text-xl'>
+           <span className='text-3xl'>{datas[1].Intro[8].name}</span> <br></br>
+           {datas[1].Intro[8].text}
+           </div>
           </article>
         </div>
       </section>

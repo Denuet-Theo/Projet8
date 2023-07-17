@@ -1,6 +1,5 @@
 import Head from "next/head"
-//import GenerateCvPdf from '../components/Pdf/GenerateCvPdf'
-import React, { useState, useEffect, useRef, Component, useContext } from 'react'
+import React from 'react'
 import { collection,doc, getDocs, getDoc } from 'firebase/firestore'
 import { db } from '../../firebase'
 import Layout from "../components/Layout"
@@ -69,13 +68,11 @@ export default function About({textunique}){
 export async function getServerSideProps(){
     const databaseRef = collection(db,"Travaux")
    const data = await getDocs(databaseRef)
+ 
    const entries = JSON.parse(
-    JSON.stringify(data.docs.map((doc) => ({ ...doc.data(),id: doc.id})))
-   )
-   const entries2 = JSON.parse(
     JSON.stringify(data.docs.map((doc) => ( doc.data().Competences)))
    )
-   const settext = new Set(entries2)
+   const settext = new Set(entries)
     const textunique = [...settext]
     console.log(textunique)
 

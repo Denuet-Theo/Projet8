@@ -48,6 +48,10 @@ export const data = [
           name:"JSPDF",
           text:"JSPDF est une bibliothèque qui nous propose de nombreuses fonctions permettant de générer du PDF. Écrite en Javascript, cette librairie ne sollicite pas le serveur : tout se passe côté client. jsPDF est idéal pour générer des PDF pour les rapports, les certificats, les tickets et tout ce  que vous pourrez imaginer"
         },
+        {
+          name:"VERCEL",
+          text:"La plate-forme de Vercel permet le déploiement (hébergement gratuit) de sites Web JAMStack et statique. De plus, il ne nécessite aucune configuration et fonctionne avec tout type de Framework web. De plus, Vercel offre des performances de site rapides avec des déploiements évolutifs et simples."
+        },
 
       ],
     },
