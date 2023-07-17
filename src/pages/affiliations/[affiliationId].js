@@ -51,11 +51,7 @@ export default function Affiliation({ entries}) {
     )
   }
   
-  export async function getServerSideProps({ params,res }) {
-    res.setHeader(
-      'Cache-Control',
-      'public, s-maxage=604800, stale-while-revalidate=86400'
-    )
+  export async function getServerSideProps({ params }) {
     
    const affiliationId=params.affiliationId
    const databaseRef = doc(db,"Travaux",affiliationId)
