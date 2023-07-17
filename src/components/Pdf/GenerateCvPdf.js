@@ -17,7 +17,7 @@ export default function GeneratePDF() {
           }
         });
       }
-      getBase64FromUrl("/CV_2023-05-18_Theo_Denuet_page-0001.jpg").then(console.log)
+      getBase64FromUrl("https://cdn-images.zety.fr/pages/modeles_cv_word_gratuits_modernes_10.png").then(console.log)
       
         function generate(){
         const doc= new jsPDF('portrait', 'px', 'a4',false)
