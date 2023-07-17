@@ -1,6 +1,10 @@
 import React from 'react'
 
 export default function Collapse(need){
+    const settext = new Set(need.need)
+    const textunique = [...settext]
+    console.log(textunique)
+    
     
 
     return (
@@ -12,11 +16,11 @@ export default function Collapse(need){
             </div>
             <div className="collapse-content">
                 <ul className="grid grid-cols-3 m-auto text-center pt-10 pb-10">
-                    {need.need.map((element, i) => {
-                        return (
-                            <li key={i} className="text-3xl pb-3">- {element}</li>
-                        )
-                    })}
+                {textunique.map((element, i) => {
+                    return (
+                        <li key={i} className="text-3xl pb-3">- {element}</li>
+                    )
+                })} 
                     <li className="text-3xl">- NEXT </li>
                     <li className="text-3xl">- Firebase </li>
                 </ul>

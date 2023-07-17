@@ -8,7 +8,7 @@ import dynamic from 'next/dynamic'
 const GenerateCvPdf = dynamic(() => import('../components/Pdf/GenerateCvPdf'))
 const Collapse = dynamic(() => import('../components/Collapse'))
 
-export default function About({textunique}){
+export default function About({entries}){
     return(
             <Layout>
                 <Head>
@@ -27,7 +27,7 @@ export default function About({textunique}){
                         et a concevoir des projets en accord avec cela.
                         Je suis capable de devellopé dans divers languages grâce au temps passé a apprendre et j'espère encore étoffer tout cela.    
                     </div>
-                    <Collapse need={textunique}/>
+                    <Collapse need={entries}/>
                     <div className="m-auto">
                         <GenerateCvPdf/>
                     </div>
@@ -43,13 +43,9 @@ export async function getServerSideProps(){
    const entries = JSON.parse(
     JSON.stringify(data.docs.map((doc) => ( doc.data().Competences)))
    )
-   const settext = new Set(entries)
-    const textunique = [...settext]
-    console.log(textunique)
-
     return{
         props: {
-            textunique,
+            entries
         },
     }
 }
