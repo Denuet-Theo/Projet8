@@ -54,7 +54,7 @@ export default function Affiliation({ entries}) {
   export async function getServerSideProps({ params,res }) {
     res.setHeader(
       'Cache-Control',
-      'public, s-maxage=10, stale-while-revalidate=59'
+      'public, s-maxage=604800, stale-while-revalidate=86400'
     )
     
    const affiliationId=params.affiliationId
