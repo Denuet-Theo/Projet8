@@ -22,8 +22,8 @@ export default function Works({entries}){
                     <link rel='icon' href='/favicon.ico'/>
                 </Head>
                 <section>
-                    <h1 className='text-5xl flex justify-center mt-10 m-auto w-[90%]'>Voici les travaux de mon Portfolio</h1>
-                    <p className='text-xl flex justify-center mt-10 m-auto w-[90%]'>Cliquez sur les images pour avoir plus d'informations</p>
+                    <h1 className='text-5xl flex justify-center mt-10 m-auto w-[90%] text-center'>Voici les travaux de mon Portfolio</h1>
+                    <p className='text-xl flex justify-center mt-10 m-auto w-[90%] text-center'>Cliquez sur les images pour avoir plus d'informations</p>
                     <div className='mb-32 mt-36 lg:grid lg:grid-cols-3 gap-8 ml-4 mr-4 flex flex-col'>
                         {entries.map((entrie,i) => {
                             return(

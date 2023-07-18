@@ -25,7 +25,7 @@ export default function Affiliation({ entries}) {
                   <div className='flex justify-center'>
                     <h1 className='text-5xl font-bold mt-5 mb-10'>{entrie.Titre}</h1>
                   </div>
-                  <h2 className='py-6 text-3xl ml-5'>{entrie.Languages}</h2>
+                  <h2 className='py-6 text-3xl ml-5 font-semibold text-center'>{entrie.Languages}</h2>
                   <div className='text-center mt-16 mb-7'>
                     <p className='py-6 text-3xl w-[100%] m-auto'>Voici le {entrie.Titre}, je vous invite a le téléchargé en pdf.<br></br>La description de ce document se trouve dans le fichier, il vous sera plus facile de comprendre celui-ci, bonne lecture !</p>
                   </div>

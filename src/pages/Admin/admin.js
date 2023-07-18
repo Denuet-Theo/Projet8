@@ -1,10 +1,9 @@
 import Head from "next/head"
 import LayoutAdmin from "../../components/Admin/LayoutAdmin"
 import AuthRoute from '../../HOC/AuthRoute'
-import React, { useState, useEffect, useRef, Component, useContext } from 'react'
-import { collection,doc, getDocs, getDoc } from 'firebase/firestore'
+import React from 'react'
+import { collection, getDocs } from 'firebase/firestore'
 import { db } from '../../../firebase'
-//import Cards from '../../components/Cards'
 import Image from 'next/image'
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
@@ -24,7 +23,7 @@ export default function admin({entries}) {
           <link rel='icon' href='/favicon.ico' />
         </Head>
         <section>
-          <h1 className='text-5xl flex justify-center mt-10 m-auto w-[90%]'>Voici les travaux de mon Portfolio</h1>
+          <h1 className='text-5xl flex justify-center mt-10 m-auto w-[90%] text-center'>Voici les travaux de mon Portfolio</h1>
           <Link href="/Admin/creatework" className="m-auto flex mt-[50px]">
             <button aria-label="Redirection vers la page de création de projet" className='btn btn-info mt-4 hover:bg-slate-800 bg-[#424242] m-auto'>Ajouter un nouveau projet</button>
           </Link> 

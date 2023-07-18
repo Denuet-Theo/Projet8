@@ -13,18 +13,18 @@ export default function Home() {
       </Head>
       <section className='flex flex-col relative bg-slate-900 text-white'>
         <div className='flex justify-center flex-col'>
-          <h1 className='mt-[50px] m-auto text-8xl'>Mon Portfolio</h1>
+          <h1 className='mt-[50px] m-auto sm:text-8xl text-6xl text-center'>Mon Portfolio</h1>
           <h2 className='m-auto mt-20 text-2xl'>Accéder au site en tant que :</h2>
         <div className='m-auto flex flex-col lg:flex-row text-center justify-center mt-28 text-2xl w-full'>
           <Link href="/Accueil" className='w-full'>
-            <button aria-label='Site Visiteur' className='w-[40%] max-w-[40ch] h-[100px] border border-white border-solid uppercase py-2 duration-300 relative after:absolute after:top-0 after:right-full after:bg-white after:z-10 after:w-full after:h-full overflow-hidden hover:after:translate-x-full after:duration-300 hover:text-black'>
+            <button aria-label='Site Visiteur' className='w-[60%] max-w-[40ch] h-[100px] border border-white border-solid uppercase py-2 duration-300 relative after:absolute after:top-0 after:right-full after:bg-white after:z-10 after:w-full after:h-full overflow-hidden hover:after:translate-x-full after:duration-300 hover:text-black'>
               <h2 className='relative z-20'>
                 VISITEUR
               </h2>
             </button>
          </Link>
          <Link href="/Admin/LoginPage" className='w-full'>
-            <button aria-label='Site Administrateur' className='lg:ml-[30px] mt-[30px] lg:mt-[0px] w-[40%] max-w-[40ch] h-[100px] border border-white border-solid uppercase py-2 duration-300 relative after:absolute after:top-0 after:right-full after:bg-white after:z-10 after:w-full after:h-full overflow-hidden hover:after:translate-x-full after:duration-300 hover:text-black'>
+            <button aria-label='Site Administrateur' className='lg:ml-[30px] mt-[30px] lg:mt-[0px] w-[60%] max-w-[40ch] h-[100px] border border-white border-solid uppercase py-2 duration-300 relative after:absolute after:top-0 after:right-full after:bg-white after:z-10 after:w-full after:h-full overflow-hidden hover:after:translate-x-full after:duration-300 hover:text-black'>
               <h2 className='relative z-20'>
                 ADMINISTRATEUR
               </h2>
@@ -34,7 +34,7 @@ export default function Home() {
       </div>
       </section>
       <section className='mt-[150px]' aria-roledescription="Contenu expliquant ce qu'est le site">
-        <div className='text-3xl flex justify-center flex-col w-[90%] m-auto items-center'>
+        <div className='text-3xl flex justify-center flex-col w-[90%] m-auto items-center leading-[42px]'>
           Bienvenue sur mon portfolio, ici je vais vous présenter les travaux que j'ai efféctué durant ces derniers mois, parmis ceux ci vous pourrez constater 
           plusieurs langages de programation différent comme par exemple du HTML/CSS ou du javascript mais aussi des languages un peu plus avancés comme du React et du Next 
           associé suivant les projets a des langages de Backend.
