@@ -34,7 +34,7 @@ export default function Home() {
       </div>
       </section>
       <section className='mt-[150px]' aria-roledescription="Contenu expliquant ce qu'est le site">
-        <div className='text-3xl flex justify-center flex-col w-[90%] m-auto items-center leading-[42px]'>
+        <div className='sm:text-2xl text-xl md:text-3xl flex justify-center flex-col w-[90%] m-auto items-center leading-[42px]'>
           Bienvenue sur mon portfolio, ici je vais vous présenter les travaux que j'ai efféctué durant ces derniers mois, parmis ceux-ci vous pourrez constater 
           plusieurs langages de programation différents, comme par exemple du HTML/CSS ou du javascript, mais aussi des languages un peu plus avancés comme du React et du Next 
           associés suivant les projets à des langages de Backend. <br></br>
