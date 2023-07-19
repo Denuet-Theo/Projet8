@@ -29,7 +29,7 @@ export default function GeneratePDF() {
 
   return (
     <>
-      <button aria-label='Telecharger le Cv en PDF' onClick={generate} type="primary" className='text-2xl btn btn-primary h-24 rounded w-[350px] mt-[250px] mb-[100px] m-auto'>Telécharger fictif Cv</button> 
+      <button aria-label='Telecharger le Cv en PDF' onClick={generate} type="primary" className='text-2xl btn btn-primary h-24 rounded w-[350px] mt-[250px] mb-[100px] m-auto'>Télécharger CV fictif</button> 
     </>
   )
 }

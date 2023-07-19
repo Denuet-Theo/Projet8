@@ -35,13 +35,13 @@ export default function Home() {
       </section>
       <section className='mt-[150px]' aria-roledescription="Contenu expliquant ce qu'est le site">
         <div className='text-3xl flex justify-center flex-col w-[90%] m-auto items-center leading-[42px]'>
-          Bienvenue sur mon portfolio, ici je vais vous présenter les travaux que j'ai efféctué durant ces derniers mois, parmis ceux ci vous pourrez constater 
-          plusieurs langages de programation différent comme par exemple du HTML/CSS ou du javascript mais aussi des languages un peu plus avancés comme du React et du Next 
-          associé suivant les projets a des langages de Backend.
-          Pour ce faire les projets seront disposés sous forme de cards et cliquable pour accéder a une page avec plus de contenu et surtout avec un moyen pour vous de vous procurer la description du projet
-          sous forme de pdf.
-          A coté de ça je vous propose également dans une partie de ce site d'en apprendre plus sur moi, mes compétences et mes projets afin que vous me connaissiez mieux, sur cette page vous aurez également la possibilité de 
-          télécharger un pdf, ici mon CV
+          Bienvenue sur mon portfolio, ici je vais vous présenter les travaux que j'ai efféctué durant ces derniers mois, parmis ceux-ci vous pourrez constater 
+          plusieurs langages de programation différents, comme par exemple du HTML/CSS ou du javascript, mais aussi des languages un peu plus avancés comme du React et du Next 
+          associés suivant les projets à des langages de Backend. <br></br>
+          Pour ce faire, les projets seront disposés sous forme de Cards et cliquables pour accéder à une page avec plus de contenu. Ainsi, cela sera un moyen pour vous de vous procurer la description du projet
+          sous forme de pdf. <br></br>
+          À coté de cela, je vous propose également dans une partie de ce site d'en apprendre plus sur moi, mes compétences et mes projets afin que vous me connaissiez mieux. Sur cette page, je vous laisse également la possibilité de 
+          télécharger mon CV au format pdf.
           <br></br>
           <span className='mt-8 mb-24'>Bonne lecture !</span>
         </div>

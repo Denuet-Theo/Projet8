@@ -18,14 +18,14 @@ export default function About({entries}){
                     <link rel='icon' href='/favicon.ico'/>
                 </Head>
                 <section className="m-auto flex flex-col justify-center">
-                    <h1 className="m-auto sm:text-4xl text-3xl mb-20 mt-20 text-center">En savoir plus sur moi !</h1>
+                    <h1 className="m-auto sm:text-4xl text-3xl mb-20 mt-20 text-center">En savoir plus sur moi...</h1>
                     <div className="mb-[200px] sm:text-3xl text-2xl w-[90%] m-auto leading-[42px] text-center">
-                        Je suis passionné par le domaine du web depuis mes années lycées au j'ai commencé a apprendre diverses façon de coder a petites échelle 
-                        bien sur ! Après m'en être écarté pendant quelques années afin d'asouvir mon envie d'enseigner, les mathématiques en l'occurence, j'ai eu pendant ce parcours 
-                        quelques petits cours d'informatique qui m'ont redonné cette envie d'y retourné et pourquoi pas d'apporter mon aide a d'autres personnes dans ce domaine.
-                        Actuellement, j'essaie avant tout d'apprendre encore et encore plus de choses, étant de base attiré vers le frontend je commence a m'orienter vers le full-stack 
-                        et a concevoir des projets en accord avec cela.
-                        Je suis capable de devellopé dans divers languages grâce au temps passé a apprendre et j'espère encore étoffer tout cela.    
+                        Je suis passionné par le domaine du web depuis mes années lycées où j'ai commencé à apprendre diverses façons de coder, à petite échelle 
+                        bien sûr ! Je m'en suis écarté pendant quelques années afin d'assouvir mon envie d'enseigner les mathématiques. Durant ce parcours, j'ai eu l'occasion d'assister à
+                        quelques cours d'informatique, ce qui a fait renaître cette envie de travailler dans cette branche et pourquoi pas d'apporter mon aide à d'autres personnes.
+                       <br></br> Actuellement, j'ai pour objectif d'acquérir toujours plus de connaissances. Ayant de base une attirance pour le Frontend, je commence à m'orienter vers le full-stack 
+                        et à concevoir des projets en accord avec cela.
+                        Je suis maintenant capable de developper une application web dans divers langages grâce au temps passé à apprendre et j'espère encore avoir l'occasion d'étoffer tout cela.    
                     </div>
                     <Collapse need={entries}/>
                     <div className="m-auto">

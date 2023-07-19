@@ -21,16 +21,16 @@ export const data = [
     {
       Intro: [
         {
-          partie1: "Bonjour,je suis étudiant chez Openclassrooms, je souhaite devenir devellopeur web et je me forme a toute sortes de languages informatique afin d'en découvrir les secrets."
+          partie1: "Bonjour, je suis étudiant chez Openclassrooms, je souhaite devenir developpeur web et je me forme à toutes sortes de langages informatiques afin d'en découvrir les secrets."
         },
         {
-          partie2: "Ici, j'ai voulu crée le portfolio de mes projets réalisés pendant ma formation, pour ce faire j'ai decidé d'utiliser React étant donné que c'est un véritable coup de coeur pour ce language que j'ai eu pendant ma formation. Cependant pour des raisons techniques j'ai du apprendre a manier Next.js afin de faire du SSR pour améliorer mon SEO et vous convaincre des progrès effectués pendant ces 8 mois"
+          partie2: "Ici, j'ai voulu créé le portfolio de mes projets réalisés pendant ma formation. Pour ce faire, j'ai decidé d'utiliser React étant donné que j'ai eu un véritable coup de coeur pour ce langage pendant ma formation. Cependant, pour des raisons techniques, j'ai dû apprendre à manier Next.js afin de faire du SSR (Server Side Rendering) pour améliorer mon SEO et vous convaincre des progrès effectués pendant ces 8 mois."
         },
         {
-          partie3: "Je n'ai pas voulu m'arréter ici, je voulais encore faire mieux et pour cela, j'ai trouvé ça toujours plus interressant de montrer la deuxieme chose que j'ai appris c'est a dire le backend.Pour cela j'ai décidé d'utiliser Firebase car j'ai pu avoir tout ce que je chercher au même endroit c'est a dire une authentification, et une base de données afin de stocker les différents projets que j'effectue petit a petit, le tout gratuitement bien sur"
+          partie3: "Je n'ai pas voulu m'arrêter ici, je voulais faire encore mieux et, pour cela, il m'a semblé plus intéressant de montrer la deuxième chose que j'ai eu l'occasion d'apprendre, le Backend. Pour cela, j'ai décidé d'utiliser Firebase car j'ai pu avoir tout ce que je cherchais au même endroit, c'est-à-dire une authentification et une base de données afin de stocker les différents projets que je mène petit à petit, le tout gratuitement bien sûr."
         },
         {
-          partie4: "Pour faire tout cela, j'ai utilisé diverses méthodes, de la génération statique via un fichier de data, du rendu coté serveur un autre coup avec firestore afin d'utiliser plusieurs possibilités de récupérations de data ainsi que pour favoriser mon SEO mais aussi de la générations de pdf afin de pouvoir rendre mes différents projets sous ce format très spécifique, j'ai vraiment essayer de rendre complet mon portfolio afin d'avoir un rendu qui me satifsait avant tout "
+          partie4: "Pour faire tout cela, j'ai utilisé diverses techniques. De la récupération de données via un fichier de data au rendu côté serveur avec firestore, j'ai utilisé plusieurs méthodes de récupération de data dans le but de favoriser mon SEO. J'ai également utilsé de la génération de pdf afin de pouvoir rendre mes différents projets sous ce format très spécifique. J'ai vraiment essayé de rendre complet mon portfolio afin d'avoir un rendu qui me satifsait avant tout. "
         },
         {
           name:"NEXT.JS",
@@ -38,7 +38,7 @@ export const data = [
         },
         {
           name:"TAILWIND CSS",
-          text:"Tailwind CSS est un framework CSS open source. La fonctionnalité principale de cette bibliothèque est, contrairement à d'autres frameworks CSS comme Bootstrap, qu'elle ne procure pas une série de classes prédéfinies pour des éléments tels que des boutons ou des tables. À la place, Tailwind crée une liste de classes CSS « utilitaires » pouvant être utilisés pour ajouter un style à chaque élément en les mélangeant et en les agençant"
+          text:"Tailwind CSS est un framework CSS open source. La fonctionnalité principale de cette bibliothèque est, contrairement à d'autres frameworks CSS comme Bootstrap, qu'elle ne procure pas une série de classes prédéfinies pour des éléments tels que des boutons ou des tables. À la place, Tailwind crée une liste de classes CSS « utilitaires » pouvant être utilisées pour ajouter un style à chaque élément en les mélangeant et en les agençant."
         },
         {
           name:"FIRESTORE",
@@ -46,7 +46,7 @@ export const data = [
         },
         {
           name:"JSPDF",
-          text:"JSPDF est une bibliothèque qui nous propose de nombreuses fonctions permettant de générer du PDF. Écrite en Javascript, cette librairie ne sollicite pas le serveur : tout se passe côté client. jsPDF est idéal pour générer des PDF pour les rapports, les certificats, les tickets et tout ce  que vous pourrez imaginer"
+          text:"JSPDF est une bibliothèque qui nous propose de nombreuses fonctions permettant de générer du PDF. Écrite en Javascript, cette librairie ne sollicite pas le serveur : tout se passe côté client. jsPDF est idéal pour générer des PDF pour les rapports, les certificats, les tickets et tout ce  que vous pouvez imaginer."
         },
         {
           name:"VERCEL",

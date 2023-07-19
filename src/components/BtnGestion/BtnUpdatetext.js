@@ -67,9 +67,9 @@ export default function BtnUpdatetext({need}) {
     <input placeholder='Titre' id="Titre" name="Titre" className="outline-none mt-3 p-3 mb-3 text-base  text-violet-700 flex-1 bg-violet-50 hover:bg-violet-100 rounded-full" type="text" value={Titre} onChange={event => setTitre(event.target.value)}/>
       <label className='text-violet-700 mt-3 mb-2 m-auto' htmlFor="UrlGithub">Url Github :</label>
     <input placeholder='Url Github' name="UrlGithub" id="UrlGithub" className="outline-none mt-3 p-3 mb-3 text-base  text-violet-700 flex-1 bg-violet-50 hover:bg-violet-100 rounded-full" type="text" value={UrlGithub} onChange={event => setUrlGithub(event.target.value)}/>
-    <label className='text-violet-700 mt-3 mb-2 m-auto' htmlFor="Languages">Languages :</label>
+    <label className='text-violet-700 mt-3 mb-2 m-auto' htmlFor="Languages">Langages :</label>
     <input placeholder='Languages' id="Languages" name="Languages" className="outline-none mt-3 p-3 mb-3 text-base  text-violet-700 flex-1 bg-violet-50 hover:bg-violet-100 rounded-full" type="text" value={Languages} onChange={event => setLanguages(event.target.value)}/>
-    <label className='text-violet-700 mt-3 mb-2 m-auto' htmlFor="Competences">Competences :</label>
+    <label className='text-violet-700 mt-3 mb-2 m-auto' htmlFor="Competences">Compétences :</label>
     <input placeholder='Competences' id="Competences" name="Competences" className="outline-none mt-3 p-3 mb-3 text-base  text-violet-700 flex-1 bg-violet-50 hover:bg-violet-100 rounded-full" type="text" value={Competences} onChange={event => setCompetences(event.target.value)}/>
     <label className='text-violet-700 mt-3 mb-2 m-auto' htmlFor="Description">Entrer une nouvelle description :</label>
     <textarea id="Description" titre="description" name="Description" rows="6" cols="40" placeholder="Entrer la description" value={Description} onChange={event => setDescription(event.target.value)} className="outline-none p-3 mb-3 mt-3 text-base  text-violet-700  bg-violet-50 hover:bg-violet-100 flex-1"></textarea>

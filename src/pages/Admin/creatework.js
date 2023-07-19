@@ -117,7 +117,7 @@ export default function creatework() {
                 <input type='text' name='UrlGithub' id='UrlGithub' value={formData.UrlGithub} onChange={handleChange} placeholder="Url Github" className="outline-none p-3 mb-3 text-base  text-violet-700  bg-violet-50 hover:bg-violet-100 rounded-full" />
                 <label htmlFor='Languages' className='m-auto text-2xl mb-[25px] font-bold mt-4'>Langages :</label>          
                 <input type='text' name='Languages' id='Languages' value={formData.Languages} onChange={handleChange} placeholder="Langages utilisés" className="outline-none p-3 mb-3 text-base  text-violet-700  bg-violet-50 hover:bg-violet-100 rounded-full" /> 
-                <label htmlFor='Competences' className='m-auto text-2xl mb-[25px] font-bold mt-4'>Competences :</label>          
+                <label htmlFor='Competences' className='m-auto text-2xl mb-[25px] font-bold mt-4'>Compétences :</label>          
                 <input type='text' name='Competences' id='Competences' value={formData.Competences} onChange={handleChange} placeholder="Compétences" className="outline-none p-3 mb-3 text-base  text-violet-700  bg-violet-50 hover:bg-violet-100 rounded-full" />    
                 <label className='m-auto text-2xl mb-[25px] font-bold mt-4' htmlFor="Description">Entrer une description :</label>
                 <textarea id="Description" name="Description" value={formData.Description} onChange={handleChange} placeholder="Entrer la description" className="h-[250px] outline-none p-3 mb-3 text-base  text-violet-700  bg-violet-50 hover:bg-violet-100"></textarea>
