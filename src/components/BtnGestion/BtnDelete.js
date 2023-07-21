@@ -25,7 +25,7 @@ export default function BtnDelete({need}) {
 
   return (
     <div>
-     <button aria-label="Suppression du projet" className="btn btn-error md:mt-0 w-[200px] h-[60px] rounded text-2xl font-semibold" onClick={() => {router.push("/Admin/admin");deleteDocument(need)}}>Delete</button>
+     <button aria-label="Suppression du projet" className="btn btn-error md:mt-0 w-[200px] h-[60px] rounded text-2xl font-semibold" onClick={() => {deleteDocument(need);router.push("/Admin/admin")}}>Delete</button>
     </div>
   )
 }
