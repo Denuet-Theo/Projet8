@@ -3,10 +3,7 @@ import React from 'react'
 export default function Collapse(need){
     const settext = new Set(need.need)
     const textunique = [...settext]
-    console.log(textunique)
     
-    
-
     return (
         <>
         <div className="collapse bg-base-200 w-[70%] m-auto">

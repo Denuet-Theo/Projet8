@@ -37,8 +37,6 @@ export default function creatework() {
         Images:files[0],
       Competences:formData.Competences,
       UrlGithub:formData.UrlGithub})
-        console.log(files[0])
-        console.log(reff)
       } else {
         message.error('File size to large')
       }
@@ -70,7 +68,6 @@ export default function creatework() {
         ()=>{
           getDownloadURL(uploadTask.snapshot.ref).then((url) =>{
             const databaseRef = doc(db, 'Travaux', formData.Titre)
-            console.log(formData)
             setDoc(databaseRef, {
               Titre: formData.Titre,
               Description: formData.Description,
@@ -95,7 +92,6 @@ export default function creatework() {
         }
       )}
       else{
-        console.log('Formulaire incomplet')
         alert("Formulaire incomplet")
       }}
  

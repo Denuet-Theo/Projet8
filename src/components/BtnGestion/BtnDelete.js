@@ -8,15 +8,10 @@ import { deleteObject,ref } from "firebase/storage";
 
 export default function BtnDelete({need}) {
     const router = useRouter()
-  
-    console.log(need[0].ImageName)
 
     const deleteDocument = () => {
         let fieldToEdit = doc(db, "Travaux", need[0].Titre);
         deleteDoc(fieldToEdit)
-        .then(() => {
-          console.log('Data Deleted')
-        })
         const desertRef = ref(storage, `image/${need[0].ImageName}`);
         deleteObject(desertRef).then(() => {
         }).catch((error) => {

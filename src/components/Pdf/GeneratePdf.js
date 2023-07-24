@@ -1,24 +1,27 @@
 import jsPDF from 'jspdf'
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 
 export default function GeneratePDF({ need }) {
     const [imageData64, setImageData64] = useState()
 
-    const getBase64FromUrl = async (url) => {
-        const data = await fetch(url);
-        const blob = await data.blob();
-        return new Promise((resolve) => {
-          const reader = new FileReader();
-          reader.readAsDataURL(blob); 
-          reader.onloadend = () => {
-            const base64data = reader.result;   
-            //resolve(base64data);
-            setImageData64(base64data)
-          }
-        });
-      }
-
-        getBase64FromUrl(need[0].ImageUrl)
+    useEffect(()=> {
+      const getBase64FromUrl = async (url) => {
+          const data = await fetch(url);
+          const blob = await data.blob();
+          return new Promise((resolve) => {
+            const reader = new FileReader();
+            reader.readAsDataURL(blob); 
+            reader.onloadend = () => {
+              const base64data = reader.result;   
+              //resolve(base64data);
+              setImageData64(base64data)
+            }
+          });
+        }
+  
+          getBase64FromUrl(need[0].ImageUrl)
+    },[imageData64])
+    
         function generate(){
         const doc= new jsPDF('portrait', 'px', 'a4',false)
            //Titre

@@ -10,7 +10,6 @@ export default function Login() {
     const [isLoggingIn, setIsLoggingIn] = useState(true)
 
     const { login, currentUser } = useAuth()
-    console.log(currentUser)
 
     async function submitHandler() {
         if (!email || !password) {

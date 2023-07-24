@@ -5,7 +5,6 @@ export default function GeneratePDF() {
     const [imageData64, setImageData64] = useState()
 
     useEffect(() => {
-
       const getBase64FromUrl = async (url) => {
           const data = await fetch(url);
           const blob = await data.blob();
@@ -19,10 +18,9 @@ export default function GeneratePDF() {
             }
           });
         }
-        getBase64FromUrl("https://cdn-images.zety.fr/pages/modeles_cv_word_gratuits_modernes_10.png").then(console.log)
+        getBase64FromUrl("https://cdn-images.zety.fr/pages/modeles_cv_word_gratuits_modernes_10.png")
     },[imageData64])
    
-      
         function generate(){
         const doc= new jsPDF('portrait', 'px', 'a4',false)
         //Image
